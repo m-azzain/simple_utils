@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# My Exclusions:
+novelfull/**/*.html
+moboreader/**/*.html
+novelfull/**/*.json
+moboreader/**/*.json

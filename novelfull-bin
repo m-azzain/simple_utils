@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+
+import os
+import novelfull_reader
+
+DEST = 'C:\\Users\\malza\\Desktop\\odoo_base_web\\temp\\web_page_reader\\novelfull'
+print('name ==  %s' % __name__)
+if __name__ == "__main__":
+
+    NovelFullReader = novelfull_reader.NovelFullReader
+
+    martial_peak = NovelFullReader(novel_name='martial-peak', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # martial_peak.read_by_page(start_page=25, end_page=46)
+    # martial_peak.read_by_chapter(first_chapter= 2718,last_chapter= 2750)
+    martial_peak.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_chapter=2704)
+    # martial_peak.clean_raw(filter_not_raw=True)
+    # martial_peak.translate_by_word(starting_chapter=2596, ending_chapter=2597)
+    # martial_peak.translate_py_chapter(starting_chapter=2580, ending_chapter=2589)
+    # martial_peak.merge_translations()
+    # martial_peak.humanize_translations()
+    # martial_peak.extract_empty_translation();
+
+    #'martial-god-asura' order 6
+    # asura = NovelFullReader(novel_name='martial-god-asura',file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # # #asura.read_by_page(start_page=37, end_page=52)
+    # asura.read_by_chapter(first_chapter=4965, last_chapter=4999)
+    # # # asura.clean_raw(filter_not_raw=True)
+    # asura.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    # Read worlds-apocalypse-online  rate 8.6 ongoing
+    # apocalypse = NovelFullReader(novel_name='worlds-apocalypse-online', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # # apocalypse.read_by_page(start_page=33, end_page=34)
+    # apocalypse.read_by_chapter(first_chapter=1714, last_chapter=1750)
+    # # # apocalypse.clean_raw(filter_not_raw=True)
+    # apocalypse.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+
+    # Read war-sovereign-soaring-the-heavens
+    # war_sovereign = NovelFullReader(novel_name='war-sovereign-soaring-the-heavens', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # # #war_sovereign.read_by_page(start_page=37, end_page=52)
+    # war_sovereign.read_by_chapter(first_chapter=3530, last_chapter=3549)
+    # # # war_sovereign.clean_raw(filter_not_raw=True)
+    # war_sovereign.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    # Read versatile-mage rate 8.7 order 10
+    # versatile_mage = NovelFullReader(novel_name='versatile-mage', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    #versatile_mage.read_by_page(start_page=37, end_page=52)
+    # versatile_mage.read_by_chapter(first_chapter=2444, last_chapter=2449)
+    # versatile_mage.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    #----------------------------------------------------------------------
+
+    # #Read super-gene rate 8.7 order 3 total chapter 3462
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # super_gene = NovelFullReader(novel_name='super-gene', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # super_gene.read_by_page(start_page=62, end_page=70)
+
+    # Read release-that-witch  rate 8.8 order 9 total chapter 1498
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # that_witch = NovelFullReader(novel_name='release-that-witch', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # that_witch.read_by_page(start_page=11, end_page=30)
+    # # that_witch.clean_raw(filter_not_raw=True)
+    # that_witch.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    # Read library-of-heavens-path  rate 8.7 order 7 total chapter 2268
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # library_of_heavens = NovelFullReader(novel_name='library-of-heavens-path', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # library_of_heavens.read_by_page(start_page=44, end_page=46)
+    # # library_of_heavens.clean_raw(filter_not_raw=True)
+    # library_of_heavens.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    # Read dragon-prince-yuan rate 8.7 total chapter 1503 ||| same author as battle-through-the-heavens
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # sovereign = NovelFullReader(novel_name='dragon-prince-yuan', file_dest = NovelFullReader.DEFAULT_FILE_DEST)
+    # # sovereign.read_by_page(start_page=31, end_page=31)
+    # # sovereign.clean_raw(filter_not_raw=True)
+    # sovereign.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_dir=0, starting_chapter=1)
+
+    #Read battle-through-the-heavens rate 8.7 total chapters 1648 ||| same author as dragon-prince-yuan
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # battle_through_the_heavens = NovelFullReader(novel_name='battle-through-the-heavens', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # battle_through_the_heavens.read_by_page(start_page=32, end_page=33)
+    # battle_through_the_heavens.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_dir=0, starting_chapter=1)
+
+    #Read wu-dong-qian-kun rate 8.7 total chapter 1315 ||| same author as dragon-prince-yuan
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # wu_dong_qian_kun = NovelFullReader(novel_name='wu-dong-qian-kun', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # wu_dong_qian_kun.read_by_page(start_page=20, end_page=27)
+    # # wu_dong_qian_kun.clean_raw(filter_not_raw=True)
+    # wu_dong_qian_kun.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+    #Read genius_doctor_black_belly_miss rate 8.8 order 11 total chapter 3123
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # genius_doctor_black_belly_miss = NovelFullReader(novel_name='genius-doctor-black-belly-miss', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # genius_doctor_black_belly_miss.read_by_page(start_page=63, end_page=63)
+    # # genius_doctor_black_belly_miss.read_by_chapter(2185, 3100)
+    # # genius_doctor_black_belly_miss.clean_raw(filter_not_raw=True)
+    # genius_doctor_black_belly_miss.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_dir=0, starting_chapter=1)
+
+    # 'the-kings-avatar' rate 8.8 completed  total chapters  1729
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # the_kings_avatar = NovelFullReader(novel_name='the-kings-avatar', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # the_kings_avatar.read_by_page(start_page=1, end_page=35)
+    # # the_kings_avatar.read_by_chapter(2185, 3100)
+    # # the_kings_avatar.clean_raw(filter_not_raw=True)
+    # the_kings_avatar.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
+
+
+    # 'the-legendary-mechanic' rate 8.7 total chapter 1463
+    # NovelFullReader = novelfull_reader.NovelFullReader
+    # legendary_mechanic = NovelFullReader(novel_name='the-legendary-mechanic', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
+    # # legendary_mechanic.read_by_page(start_page=1, end_page=30)
+    # # legendary_mechanic.read_by_chapter(1310, 1463)
+    # legendary_mechanic.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_dir=0, starting_chapter=1)
+    # # legendary_mechanic.clean_raw(filter_not_raw=True)
+
+

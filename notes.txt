@@ -1,0 +1,2 @@
+you need to have cssselect installed:
+pip install cssselect

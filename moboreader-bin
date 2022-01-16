@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+
+import moboreader
+
+if __name__ == "__main__":
+
+    MoboReader = moboreader.MoboReader
+
+    apotheosis = MoboReader()
+    apotheosis.read_by_chapter(74,200)
+    # apotheosis.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_chapter=39, ending_chapter=39)
+
+    # apotheosis.set_account('project.test.010@gmail.com', 'za123go0')
+
+    # demon = MoboReader(novel_name="The Demon King's Destiny")
+    # demon.read_by_chapter(6, 30)
