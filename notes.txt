@@ -1,2 +1,3 @@
+Using the default Virtual Env of Odoo
 you need to have cssselect installed:
 pip install cssselect
