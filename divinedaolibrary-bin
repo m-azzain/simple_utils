@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+import os
+import divinedaolibrary
+
+DEFAULT_PDF_DEST = '/home/mohamed/odoo_arena/temp/web_page_reader/pdf'
+if os.name == 'nt':
+    DEFAULT_PDF_DEST = 'D:\\somewhere\\in\\DDirectory\\pdf'
+
+print('name ==  %s' % __name__)
+if __name__ == "__main__":
+
+    DivineDaoLibraryReader = divinedaolibrary.DivineDaoLibraryReader
+
+    martial_peak = DivineDaoLibraryReader(novel_name='martial-peak', file_dest=DivineDaoLibraryReader.DEFAULT_FILE_DEST)
+    # martial_peak.read_by_chapter(first_chapter= 3306,last_chapter= 3323)
+    martial_peak.convert_to_pdf(DEFAULT_PDF_DEST, starting_chapter=3300, ending_chapter=1000000)

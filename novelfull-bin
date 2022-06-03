@@ -3,7 +3,7 @@
 import os
 import novelfull_reader
 
-DEST = 'C:\\Users\\malza\\Desktop\\odoo_base_web\\temp\\web_page_reader\\novelfull'
+DEST = '/home/mohamed/odoo_arena/temp/web_page_reader/novelfull'
 print('name ==  %s' % __name__)
 if __name__ == "__main__":
 
@@ -11,8 +11,8 @@ if __name__ == "__main__":
 
     martial_peak = NovelFullReader(novel_name='martial-peak', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
     # martial_peak.read_by_page(start_page=25, end_page=46)
-    # martial_peak.read_by_chapter(first_chapter= 2718,last_chapter= 2750)
-    martial_peak.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ', starting_chapter=2704)
+    martial_peak.read_by_chapter(first_chapter= 3280,last_chapter= 3299)
+    martial_peak.convert_to_pdf(dest_dir='/home/mohamed/odoo_arena/temp/web_page_reader/pdf', starting_chapter=3280, ending_chapter=1000000)
     # martial_peak.clean_raw(filter_not_raw=True)
     # martial_peak.translate_by_word(starting_chapter=2596, ending_chapter=2597)
     # martial_peak.translate_py_chapter(starting_chapter=2580, ending_chapter=2589)
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     #'martial-god-asura' order 6
     # asura = NovelFullReader(novel_name='martial-god-asura',file_dest=NovelFullReader.DEFAULT_FILE_DEST)
     # # # #asura.read_by_page(start_page=37, end_page=52)
-    # asura.read_by_chapter(first_chapter=4965, last_chapter=4999)
+    # asura.read_by_chapter(first_chapter=5022, last_chapter=5050)
     # # # asura.clean_raw(filter_not_raw=True)
     # asura.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
 
@@ -38,14 +38,14 @@ if __name__ == "__main__":
     # Read war-sovereign-soaring-the-heavens
     # war_sovereign = NovelFullReader(novel_name='war-sovereign-soaring-the-heavens', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
     # # # #war_sovereign.read_by_page(start_page=37, end_page=52)
-    # war_sovereign.read_by_chapter(first_chapter=3530, last_chapter=3549)
+    # war_sovereign.read_by_chapter(first_chapter=3600, last_chapter=3699)
     # # # war_sovereign.clean_raw(filter_not_raw=True)
     # war_sovereign.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
 
     # Read versatile-mage rate 8.7 order 10
     # versatile_mage = NovelFullReader(novel_name='versatile-mage', file_dest=NovelFullReader.DEFAULT_FILE_DEST)
     #versatile_mage.read_by_page(start_page=37, end_page=52)
-    # versatile_mage.read_by_chapter(first_chapter=2444, last_chapter=2449)
+    # versatile_mage.read_by_chapter(first_chapter=2500, last_chapter=2599)
     # versatile_mage.convert_to_pdf(dest_dir='D:\\Currents\\027_Novels\\AUTO_READ')
 
     #----------------------------------------------------------------------

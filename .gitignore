@@ -133,3 +133,6 @@ novelfull/**/*.html
 moboreader/**/*.html
 novelfull/**/*.json
 moboreader/**/*.json
+pdf/
+divinedaolibrary/
+moboreader/

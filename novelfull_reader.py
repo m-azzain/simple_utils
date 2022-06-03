@@ -3,6 +3,7 @@ import re
 import codecs
 import io
 import csv
+from builtins import print
 from subprocess import Popen, PIPE, run
 from inspect import getmembers
 
@@ -40,7 +41,7 @@ not_translated_words = set()
 class NovelFullReader:
     URL = 'https://novelfull.com'
     DEFAULT_NOVEL_NAME = 'martial-peak'
-    DEFAULT_FILE_DEST = 'C:\\Users\\malza\\Desktop\\odoo_base_web\\temp\\web_page_reader\\novelfull'
+    DEFAULT_FILE_DEST = '/home/mohamed/odoo_arena/temp/web_page_reader/novelfull'
 
     CHAPTER_NO_RE = re.compile(r'chapter[\s*\-_]*(\d+)', re.I)
     # FORBIDDEN_CHAR_RE = re.compile(r'[\*\?\\\/\:\!\"\>\<]', re.I)
@@ -136,6 +137,7 @@ class NovelFullReader:
     def _read_chapter(self, chapter_href, chapter_no, file_name):
         chapter_url = '%s%s' % (self.URL, chapter_href)
         chapter_req = Request(chapter_url, headers={'User-Agent': 'Mozilla/5.0'})
+        print(f'reading: {chapter_url}')
         try:
             with urlopen(chapter_req) as f1:
                 chapter_result = etree.HTML(f1.read())
