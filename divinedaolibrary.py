@@ -22,6 +22,9 @@ style = """
         margin-left: 5rem;
         margin-right: 5rem;
     }
+    p {
+        font-size: larger;
+    }
     .end {
         margin-top: 2rem;
     }

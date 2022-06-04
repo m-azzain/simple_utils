@@ -13,5 +13,5 @@ if __name__ == "__main__":
     DivineDaoLibraryReader = divinedaolibrary.DivineDaoLibraryReader
 
     martial_peak = DivineDaoLibraryReader(novel_name='martial-peak', file_dest=DivineDaoLibraryReader.DEFAULT_FILE_DEST)
-    # martial_peak.read_by_chapter(first_chapter= 3306,last_chapter= 3323)
-    martial_peak.convert_to_pdf(DEFAULT_PDF_DEST, starting_chapter=3300, ending_chapter=1000000)
+    # martial_peak.read_by_chapter(first_chapter= 3315,last_chapter= 1000000)
+    martial_peak.convert_to_pdf(DEFAULT_PDF_DEST, starting_chapter=3309, ending_chapter=1000000)
